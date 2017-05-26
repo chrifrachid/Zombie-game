@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class ZombieShooter
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.TimerGameLoop = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // Form1
+            // TimerGameLoop
+            // 
+            this.TimerGameLoop.Tick += new System.EventHandler(this.TimerGameLoop_Tick);
+            // 
+            // ZombieShooter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 570);
-            this.Name = "Form1";
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.back_g;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(624, 441);
+            this.DoubleBuffered = true;
+            this.Name = "ZombieShooter";
             this.Text = "Play - Zombie Shooter";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer TimerGameLoop;
     }
 }
 

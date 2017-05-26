@@ -9,11 +9,24 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class ZombieShooter : Form
     {
-        public Form1()
+        public ZombieShooter()
         {
             InitializeComponent();
+        }
+
+        private void TimerGameLoop_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        //Overriding OnPaint function
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            Graphics gs = e.Graphics;
+
+            base.OnPaint(e);
         }
     }
 }
