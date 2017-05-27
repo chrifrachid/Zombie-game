@@ -46,6 +46,7 @@
             this.DoubleBuffered = true;
             this.Name = "ZombieShooter";
             this.Text = "Play - Zombie Shooter";
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ZombieShooter_MouseMove);
             this.ResumeLayout(false);
 
         }

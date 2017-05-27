@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ImageBase.cs" />
     <Compile Include="Play- Zombie shooter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +76,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\back_g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombie.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
